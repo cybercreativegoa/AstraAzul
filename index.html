@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <source src="videos/villa.mp4" type="video/mp4">
+
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -669,12 +671,8 @@
                     <span class="tracker-number">02</span>
                     <span>Garden</span>
                 </button>
-                <button class="tracker-item" data-target="concierge">
-                    <span class="tracker-number">03</span>
-                    <span>Concierge</span>
-                </button>
                 <button class="tracker-item" data-target="dining">
-                    <span class="tracker-number">04</span>
+                    <span class="tracker-number">03</span>
                     <span>Dining Area</span>
                 </button>
             </div>
@@ -706,39 +704,19 @@
                     </div>
                     <div class="col-lg-6 experience-copy">
                         <h3>Tropical Gardens</h3>
-                        <p>Walk along manicured stone pathways surrounded by exotic Goan flora, swaying palms, and
-                            peaceful meditation zones.</p>
+                        <p>Walk along manicured stone pathways surrounded by exotic Goan flora and
+                            swaying palms.</p>
                         <ul class="experience-feature-grid">
                             <li>Landscaped Lawns</li>
                             <li>Outdoor Seating</li>
-                            <li>Garden Swing</li>
+                            <li>Field Views</li>
                             <li>BBQ Area</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- PANEL 3: CONCIERGE -->
-            <div class="experience-panel" id="concierge">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <img src="images/corridor.jpg" class="img-fluid rounded-4" alt="Concierge guest services">
-                    </div>
-                    <div class="col-lg-6 experience-copy">
-                        <h3>24/7 Concierge</h3>
-                        <p>Enjoy zero-friction hospitality. Our highly-trained local hosts take care of transfers,
-                            bookings, and VIP access.</p>
-                        <ul class="experience-feature-grid">
-                            <li>Room Service</li>
-                            <li>Airport Pickup & Drop</li>
-                            <li>Custom Itinerary Design</li>
-                            <li>24/7 WhatsApp Desk</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PANEL 4: DINING AREA -->
+            <!-- PANEL 3: DINING AREA -->
             <div class="experience-panel" id="dining">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -746,13 +724,12 @@
                     </div>
                     <div class="col-lg-6 experience-copy">
                         <h3>Dining Area</h3>
-                        <p>Enjoy memorable meals with family and friends in our ambient dining space designed for group
-                            feasts and intimate gatherings.</p>
+                        <p>A warm and inviting space to gather, dine and create memorable moments together.</p>
                         <ul class="experience-feature-grid">
-                            <li>Spacious Group Seating</li>
-                            <li>Ambient Lighting</li>
-                            <li>In-House Chef Available</li>
-                            <li>Garden & Pool Views</li>
+                            <li>Warm Ambient Lighting</li>
+                            <li>Elegant Table Setting</li>
+                            <li>Perfect for Family & Friends</li>
+                            <li>Additional Dining Table Outdoors</li>
                         </ul>
                     </div>
                 </div>
@@ -775,17 +752,17 @@
                         <div class="outdoor-image"><img src="images/terrace.jpeg" alt="Main Terrace" loading="lazy">
                         </div>
                         <div class="outdoor-body">
-                            <h6 class="fw-bold mb-1">Main Terrace</h6>
+                            <h6 class="fw-bold mb-1">Outdoor Space</h6>
                             <p class="text-muted small mb-0">Large entertaining space with pool views</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="outdoor-card">
-                        <div class="outdoor-image"><img src="images/swing.jpeg" alt="Swing" loading="lazy"></div>
+                        <div class="outdoor-image"><img src="images/swing.jpg" alt="Swing" loading="lazy"></div>
                         <div class="outdoor-body">
                             <h6 class="fw-bold mb-1">Swing</h6>
-                            <p class="text-muted small mb-0">Direct access to a swing</p>
+                            <p class="text-muted small mb-0">A little sway, a lot of serenity</p>
                         </div>
                     </div>
                 </div>
@@ -801,11 +778,11 @@
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="outdoor-card">
-                        <div class="outdoor-image"><img src="images/diningroom.jpeg" alt="Dining Pavilion"
+                        <div class="outdoor-image"><img src="images/diningroom.jpeg" alt="Indoor Dining"
                                 loading="lazy"></div>
-                        <div class="outdoor-body">
-                            <h6 class="fw-bold mb-1">Dining Pavilion</h6>
-                            <p class="text-muted small mb-0">Covered outdoor dining for 12+ guests</p>
+                        <div class="outdoor-body" style="align-items: flex-start;">
+                            <h6 class="fw-bold mb-1">Indoor<br>Dining</h6>
+                            <p class="text-muted small mb-0">Indoor dining for 6 guests</p>
                         </div>
                     </div>
                 </div>
@@ -814,17 +791,18 @@
                         <div class="outdoor-image"><img src="images/livingroom.jpg" alt="Lounge Areas" loading="lazy">
                         </div>
                         <div class="outdoor-body">
-                            <h6 class="fw-bold mb-1">Lounge Areas</h6>
-                            <p class="text-muted small mb-0">Multiple seating areas with sunset views</p>
+                            <h6 class="fw-bold mb-1">Living Room</h6>
+                            <p class="text-muted small mb-0">Cozy living space for relaxation</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                     <div class="outdoor-card">
-                        <div class="outdoor-image"><img src="images/lawn.jpg" alt="Lawn" loading="lazy"></div>
+                        <div class="outdoor-image"><img src="images/pool%20night.png" alt="Evening Lighting"
+                                loading="lazy"></div>
                         <div class="outdoor-body">
-                            <h6 class="fw-bold mb-1">Lawn</h6>
-                            <p class="text-muted small mb-0">Peaceful area for mindfulness</p>
+                            <h6 class="fw-bold mb-1">Evening Lighting</h6>
+                            <p class="text-muted small mb-0">Evenings, illuminated</p>
                         </div>
                     </div>
                 </div>
@@ -832,7 +810,34 @@
         </div>
     </section>
 
-    <!-- ============ GUEST SERVICES — UNIQUE NUMBERED LAYOUT ============ -->
+    <!-- ASTRA AZUL VIDEO HERO -->
+    <section class="villa-hero">
+
+        <video class="villa-video" autoplay muted loop playsinline>
+            <source src="videos/villa.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Cinematic overlay -->
+        <div class="villa-overlay"></div>
+
+        <!-- Hero text -->
+        <div class="villa-content">
+
+            <h1>
+                Step Inside
+                <span>Astra Azul</span>
+            </h1>
+
+            <p class="villa-caption">
+                Take a walkthrough of your private Goan retreat.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ============ GUEST SERVICES — UNIQUE NUMBERED LAYOUT (COMMENTED OUT) ============
     <section id="services" class="section-padding bg-ink">
         <div class="container-lg">
             <div class="text-center mb-5" data-aos="fade-up">
@@ -904,6 +909,8 @@
             </div>
         </div>
     </section>
+    GUEST SERVICES COMMENT END -->
+
 
 
     <!-- ============ GALLERY ============ -->
@@ -916,6 +923,7 @@
             </div>
             <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
                 <!-- Consolidated Pictures from Bedrooms & Outdoor Sections -->
+                <!--
                 <div class="gallery-item"><img src="images/bedroom1.jpg" alt="Master Suite Bedroom" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
                 </div>
@@ -925,16 +933,17 @@
                 <div class="gallery-item"><img src="images/img1.jpg" alt="Twin Room Bedroom" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
                 </div>
+                -->
                 <div class="gallery-item"><img src="images/pool.jpg" alt="Kids Suite Bedroom" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
                 </div>
-                <div class="gallery-item"><img src="images/corridor.jpg" alt="Main Terrace View" loading="lazy">
+                <div class="gallery-item gallery-extra-mobile d-none d-md-block"><img src="images/corridor.jpg" alt="Main Terrace View" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
                 </div>
-                <div class="gallery-item"><img src="images/swing.jpeg" alt="Swing" loading="lazy">
+                <div class="gallery-item gallery-extra-mobile d-none d-md-block"><img src="images/swing.jpg" alt="Swing" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
                 </div>
-                <div class="gallery-item"><img src="images/garden.jpeg" alt="Lush Tropical Gardens" loading="lazy">
+                <div class="gallery-item gallery-extra-mobile d-none d-md-block"><img src="images/garden.jpeg" alt="Lush Tropical Gardens" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
                 </div>
                 <div class="gallery-item"><img src="images/img2.jpg" alt="Covered Outdoor Dining Pavilion"
@@ -944,15 +953,65 @@
                 <div class="gallery-item"><img src="images/img3.jpg" alt="Outdoor Sunset Lounge Area" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
                 </div>
-                <div class="gallery-item"><img src="images/diningroom.jpeg" alt="Meditation Space" loading="lazy">
+                <div class="gallery-item gallery-extra d-none"><img src="images/diningroom.jpeg" alt="Meditation Space" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
                 </div>
-                <div class="gallery-item"><img src="images/bedroom.jpg" alt="Meditation Space" loading="lazy">
+                <div class="gallery-item gallery-extra d-none"><img src="images/bedroom.jpg" alt="Meditation Space" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
                 </div>
-                <div class="gallery-item"><img src="images/kitchen.jpg" alt="Meditation Space" loading="lazy">
+                <div class="gallery-item gallery-extra d-none"><img src="images/kitchen.jpg" alt="Meditation Space" loading="lazy">
                     <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
                 </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img1.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img2.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img3.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img4.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img5.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img6.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img7.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img8.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img9.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img10.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img11.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img12.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img13.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img14.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+                <div class="gallery-item gallery-extra d-none"><img src="images2/img15.jpeg" alt="Astra Azul Villa" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="button" id="galleryViewMore" class="btn btn-turquoise rounded-pill px-4 py-2 fw-semibold">View
+                    More <i class="bi bi-chevron-down ms-1"></i></button>
             </div>
         </div>
     </section>
@@ -990,7 +1049,7 @@
                                 <use href="#ic-headset" />
                             </svg></span>
                         <h3 class="counter-number" data-target="24" data-suffix="/7">0</h3>
-                        <p class="counter-label">Concierge Service</p>
+                        <p class="counter-label">Support</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
@@ -1254,7 +1313,7 @@
                 <div class="col-lg-5" data-aos="fade-right">
                     <div class="faq-image-wrap">
                         <!-- Updated Left Side Image with Premium Architectural Interior View -->
-                        <img src="images/swing.jpeg" alt="Astra Azul luxury villa lounge interior"
+                        <img src="images/swing.jpg" alt="Astra Azul luxury villa lounge interior"
                             class="img-fluid rounded-5 shadow-lg">
                         <div class="faq-image-badge"><svg viewBox="0 0 24 24" width="22" height="22">
                                 <use href="#ic-chat" />
@@ -1271,7 +1330,7 @@
                             <button class="faq-q">What is the check-in and check-out time?<i
                                     class="bi bi-plus"></i></button>
                             <div class="faq-a">
-                                <div class="faq-a-inner">Standard check-in is 3:00 PM and check-out is 11:00 AM. Early
+                                <div class="faq-a-inner">Standard check-in is 2:00 PM and check-out is 10:00 AM. Early
                                     check-in and late check-out options are available subject to property availability.
                                 </div>
                             </div>
@@ -1279,36 +1338,36 @@
                         <div class="faq-item">
                             <button class="faq-q">Is the villa child-friendly?<i class="bi bi-plus"></i></button>
                             <div class="faq-a">
-                                <div class="faq-a-inner">Yes, Astra Azul is highly accommodating for families. We
-                                    feature a dedicated themed kids' suite, pool safety configurations, and provide high
-                                    chairs or cribs upon request.</div>
+                                <div class="faq-a-inner">Yes, Astra Azul is child-friendly and welcoming to families.
+                                    The villa features a kids' pool and a safe, comfortable environment for
+                                    children.</div>
                             </div>
                         </div>
                         <div class="faq-item">
                             <button class="faq-q">Does the rental price include staff services?<i
                                     class="bi bi-plus"></i></button>
                             <div class="faq-a">
-                                <div class="faq-a-inner">Yes, our standard base rate includes comprehensive
-                                    housekeeping, ground maintenance, and 24/7 security. Add-on options like luxury
-                                    drivers can be coordinated through concierge.</div>
+                                <div class="faq-a-inner">Our rate includes thorough cleaning between check-in and
+                                    check-out. Additional cleaning during your stay can be arranged at an extra cost,
+                                    payable by the guest. Driver services and other additional staff services are not
+                                    included.</div>
                             </div>
                         </div>
                         <div class="faq-item">
                             <button class="faq-q">What is the minimum stay requirement?<i
                                     class="bi bi-plus"></i></button>
                             <div class="faq-a">
-                                <div class="faq-a-inner">The default minimum reservation booking is typically 7 nights.
-                                    However, we maintain flexibility during structural low seasons or custom calendar
-                                    gaps.</div>
+                                <div class="faq-a-inner">The minimum stay at Astra Azul is one night, subject to
+                                    availability.</div>
                             </div>
                         </div>
                         <div class="faq-item">
                             <button class="faq-q">Can the property host special event functions?<i
                                     class="bi bi-plus"></i></button>
                             <div class="faq-a">
-                                <div class="faq-a-inner">Absolutely. We regularly facilitate bespoke anniversaries,
-                                    intimate wedding events, family celebrations, and premium corporate retreats with
-                                    designated custom service add-ons.</div>
+                                <div class="faq-a-inner">We do not permit parties or special events at the property.
+                                    This helps us maintain a peaceful environment and respect the noise levels and
+                                    privacy of our neighbourhood.</div>
                             </div>
                         </div>
                     </div>
@@ -1363,20 +1422,20 @@
                         <div class="icon-box"><i class="bi bi-box-arrow-in-right"></i></div>
                         <div>
                             <h6 class="fw-bold text-white mb-1">Check-In</h6>
-                            <p class="text-white-50 mb-0">3:00 PM onwards</p>
+                            <p class="text-white-50 mb-0">2:00 PM onwards</p>
                         </div>
                     </div>
                     <div class="d-flex gap-3 mb-5">
                         <div class="icon-box"><i class="bi bi-box-arrow-right"></i></div>
                         <div>
                             <h6 class="fw-bold text-white mb-1">Check-Out</h6>
-                            <p class="text-white-50 mb-0">By 11:00 AM</p>
+                            <p class="text-white-50 mb-0">By 10:00 AM</p>
                         </div>
                     </div>
 
                     <h6 class="fw-bold text-white mb-3">Follow Astra Azul</h6>
                     <div class="social-links d-flex gap-2">
-                        <a href="https://www.instagram.com/astraazulgoa/?hl=en" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <!-- <a href="https://www.instagram.com/astraazulgoa/?hl=en" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a> -->
                         <a href="https://www.instagram.com/astraazulgoa/?hl=en" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                         <a href="https://wa.me/917798294303" class="social-icon" aria-label="WhatsApp"><i
                                 class="bi bi-whatsapp"></i></a>
@@ -1489,7 +1548,7 @@
                         — three luxury suites, a heated swimming pool, and white-glove concierge service for your dream
                         vacation.</p>
                     <div class="social-links d-flex gap-2">
-                        <a href="https://www.instagram.com/astraazulgoa/?hl=en" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <!-- <a href="https://www.instagram.com/astraazulgoa/?hl=en" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a> -->
                         <a href="https://www.instagram.com/astraazulgoa/?hl=en" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                         <a href="https://wa.me/917798294303" class="social-icon" aria-label="WhatsApp"><i
                                 class="bi bi-whatsapp"></i></a>

@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const el = entry.target;
             const target = parseFloat(el.dataset.target);
             const suffix = el.dataset.suffix || '';
+            const word = el.dataset.word || '';
             const isFloat = String(target).includes('.');
             const duration = 1600;
             const start = performance.now();
@@ -92,7 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const progress = Math.min((now - start) / duration, 1);
                 const eased = 1 - Math.pow(1 - progress, 3);
                 const value = target * eased;
-                el.textContent = (isFloat ? value.toFixed(1) : Math.round(value)) + suffix;
+                el.innerHTML = (isFloat ? value.toFixed(1) : Math.round(value)) + suffix +
+                    (word ? ' <span class="counter-word">' + word + '</span>' : '');
                 if (progress < 1) requestAnimationFrame(tick);
             }
             requestAnimationFrame(tick);
@@ -100,6 +102,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.5 });
     counters.forEach(c => counterObserver.observe(c));
+
+    /* ---------- Gallery View More ---------- */
+    const galleryViewMore = document.getElementById('galleryViewMore');
+    if (galleryViewMore) {
+        galleryViewMore.addEventListener('click', () => {
+            document.querySelectorAll('.gallery-extra, .gallery-extra-mobile').forEach(item => {
+                item.classList.remove('d-none', 'd-md-block');
+            });
+            galleryViewMore.closest('.text-center').style.display = 'none';
+        });
+    }
 
     /* ---------- FAQ Accordion ---------- */
     const faqItems = document.querySelectorAll('.faq-item');
